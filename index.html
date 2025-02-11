@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhook Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Webhook Information</h1>
+        <input type="text" id="webhook-input" placeholder="Enter Webhook URL" />
+        <button onclick="fetchWebhookInfo()">Fetch Info</button>
+        <div id="webhook-info"></div>
+        <div id="tabs">
+            <button onclick="openTab('spam')">Spam</button>
+            <button onclick="openTab('delete')">Delete</button>
+            <button onclick="openTab('info')">Info</button>
+        </div>
+        <div id="tab-content">
+            <div id="spam-tab" class="tab-content">Spam tab content</div>
+            <div id="delete-tab" class="tab-content">Delete tab content</div>
+            <div id="info-tab" class="tab-content">Info tab content</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
